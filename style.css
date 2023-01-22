@@ -34,6 +34,10 @@ body {
     font-size: 50px;
 }
 
+nav b {
+    color: darkred;
+}
+
 nav {
     display: flex;
     align-items: center;
@@ -175,3 +179,12 @@ nav ul li a:hover::after {
 .tab-contents.active-tab {
     display: block;
 }
+
+.tab-titles b {
+    color: darkred;
+}
+
+.sub-title b {
+    color: darkred;
+}
+
