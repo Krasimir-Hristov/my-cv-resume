@@ -29,7 +29,7 @@ body {
     width: 140px;
 }
 
-#red-k {
+.red-k {
     color: darkred;
     font-size: 100px;
 }
@@ -435,7 +435,29 @@ form .btn-CV {
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;
+
 }
+
+.footer  {
+    width: 100%;
+    margin-top: 50px;
+    padding: 25px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    background-color: rgb(1, 2, 15);
+    color: #fff;
+}
+
+.red-k-footer {
+    font-size: 30px;
+    color: darkred;
+}
+.fa-solid  {
+    color: darkred;
+    font-size: 25px;
+}
+
 
 
 
