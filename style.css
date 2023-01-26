@@ -24,14 +24,14 @@ body {
 
 .logo {
     color: #000000;
-    font-size: 40px;
+    font-size: 90px;
     font-style: bold;
     width: 140px;
 }
 
 #red-k {
     color: darkred;
-    font-size: 50px;
+    font-size: 100px;
 }
 
 nav b {
@@ -54,7 +54,7 @@ nav ul li {
 nav ul li a {
     color: #000000;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 35px;
     position: relative;
 }
 
@@ -79,7 +79,7 @@ nav ul li a:hover::after {
 }
 
 .header-text h1 {
-    font-size: 60px;
+    font-size: 70px;
     margin-top: 20px;
     color: #000000;
 
@@ -121,7 +121,7 @@ nav ul li a:hover::after {
 }
 
 .sub-title {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 600;
     color: #000;
 }
@@ -133,7 +133,7 @@ nav ul li a:hover::after {
 
 .tab-links {
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -154,6 +154,30 @@ nav ul li a:hover::after {
     width: 50%;
 }
 
+.bg {
+    border: 1px  #000;
+    border-radius: 5px;
+    font-size: 25px;
+    text-decoration: none;
+    background-color: rgb(0, 0, 0);
+}
+
+.bg a {
+    text-decoration: none;
+}
+
+.bg-white {
+    color: #fff;
+}
+
+.bg-green {
+    color: green;
+}
+
+.bg-red {
+    color: red;
+}
+
 .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
@@ -161,20 +185,31 @@ nav ul li a:hover::after {
 
 .tab-contents ul li span {
     color: darkred;
-    font-size: 14px;
+    font-size: 25px;
 }
 
 .education {
-    color: darkred;
+    color: darkgreen;
+    font-size: 20px;
+    text-decoration: none;
 }
+
 
 .education-uni {
-    color: green;
+    color: orange;
+    font-size: 20px;
+    text-decoration: none;
 }
 
-.tab-contents {
+.tab-contents  {
     display: none;
 }
+
+/* .tab-contents a {
+    color: darkred;
+    font-size: 20px;
+    text-decoration: none;
+} */
 
 .tab-contents.active-tab {
     display: block;
