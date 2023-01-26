@@ -15,18 +15,23 @@
           <p class="logo"><b class="red-k">K</b>rasimir.</p>
           <ul>
             <li>
-              <a href="#"><b>H</b>ome</a>
+              <a href="#header"><b>H</b>ome</a>
             </li>
             <li>
-              <a href="#"><b>A</b>bout</a>
+              <a href="#about"><b>A</b>bout</a>
             </li>
             <li>
-              <a href="#"><b>P</b>ortfolio</a>
+              <a href="#services"><b>S</b>ervices</a>
             </li>
             <li>
-              <a href="#"><b>C</b>ontact</a>
+              <a href="#portfolio"><b>P</b>ortfolio</a>
             </li>
+            <li>
+              <a href="#contact"><b>C</b>ontact</a>
+            </li>
+            <i class="fa-solid fa-circle-xmark"></i>
           </ul>
+          <i class="fa-solid fa-bars"></i>
         </nav>
         <div class="header-text">
           <p>
@@ -377,9 +382,9 @@
             <a href="images/Krasimir Test.pdf" download class="btn btn-CV">Download CV</a>
           </div>
           <div class="contact-right">
-            <form>
-              <input type="text" name="name" placeholder="Your Name" required>
-              <input type="email" name="email" placeholder="Your Email" required>
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
               <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
               <button type="submit" class="btn btn-CV">Submit</button>
             </form>
@@ -413,5 +418,17 @@
         document.getElementById(tabName).classList.add("active-tab");
       }
     </script>
+
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwNRwEQHY5hyl6jRREHm1U3s2uo-UlkazcsN-ci3Kj71yEOWGkh4fIq0E7PO5-vEZL8TA/exec'
+  const form = document.forms['submit-to-google-sheet']
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => console.log('Success!', response))
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
   </body>
 </html>
