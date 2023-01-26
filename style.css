@@ -377,3 +377,42 @@ nav ul li a:hover::after {
     margin-top: 30px;
 }
 
+.contact-left p i {
+    color: darkred;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: blue;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+
+#github-icon {
+    color: #000;
+}
+
+.social-icons a:hover {
+    color: darkred;
+    transform: translateY(-5px);
+} 
+
+#github-icon:hover {
+    color: darkred;
+}
+
+.btn-CV {
+    display: inline-block;
+    background-color: darkgreen;
+}
+
+
+
